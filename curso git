@@ -1,0 +1,76 @@
+Eliminando archivos
+
+rm archivo2.txt
+git status
+
+agregamos cambios a la etapa stage
+git add archivo2.txt
+
+verificamos el status
+
+git commit -m "Eliminando archivo 2"
+ls
+
+Comando de ahorrar paso
+git rm archivo1.txt
+git status
+
+
+sacar un cambio en la etapa staged
+git restore --staged archivo1.txt
+git status
+
+Descartar los cambios y recuperar archivo
+git restore archivo1.txt
+git status
+ls
+Recuperamos el archivo desde una etapa
+antes de hacer comit
+
+******************************
+Cambiar el nombre o renombrar un archivo
+
+mv archivo1.txt archivo.txt
+ls
+archivo.txt
+git status
+
+git add archivo1.txt archivo.txt
+
+renamed 
+git commit -m "Renombrando archivo"
+
+git mv archivo.txt archivo1.txt
+git commit -m "Devolviendo el nombre del archivo"
+
+**********************************
+Ignorar archivos 
+
+Si tenemos un archivo de configuracion hacia una base de datos 
+
+Ejemplo
+.env
+y no queremos subir el archivo
+lo que debemos realizar es crear un nuevo archivo
+.gitignore
+colocamos la ruta de los archivos y carpetas que vamos a ignorar
+
+git add .gitignore
+git commit -m "agregando acrhivo gitignore"
+
+**********************************
+Un mejor git status
+
+git status -s
+git add .gitignore
+git status -s
+acabamos de subir el cambio a la etapa staged
+
+
+git archivo2.txt
+git status -s
+Nos aparece que estamos agregando este archivo a la etapa stage de git
+
+
+
+
