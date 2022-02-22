@@ -110,3 +110,56 @@ index 9f5d571..af760b1 100644
 
 Aqui revisamos cuales son los nuevos cambios en la etaba staged
 
+*************************
+comando git log --oneline
+
+Nos muestra un historial con un hash del historial del commit
+
+3bfea29 (HEAD -> master) Revisando cambios en git
+ec329de mostrando status corto
+993e08a agregando acrhivo gitignore
+8cb3e9c Devolviendo cambios
+477f6a9 Devolviendo nombre del archivo
+31e3819 renombrando archivo
+335cac5 renombrando archivo
+d5670dc Eliminando archivo
+d68cee3 Agregando un chanchito feliz
+b263fdb Commit inicial
+cadf937 cambios de codigo
+
+**********************************************
+Creando una rama en el repositorio
+
+comandos
+
+git branch
+git checkout -b ramab
+
+cat archivo2.txt
+muestra el contenido del archivo
+
+Traer los cambios
+en la rama master
+git merge ramab
+
+Updating 3bfea29..6ce51a0
+Fast-forward
+ archivo2.txt | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+ *****************************************
+ Subir a la nube el codigo
+
+ creamos el repositorio
+ copiar la linea
+ git remote add origin https://github.com/haperezv/miweb.git
+ git push -u origin master
+
+
+ Error al hacer push 
+ fatal: Could not read from remote repository.
+
+git remote set-url origin https://(contraseña desde git )@ github.com/haperezv/miweb.git
+ git remote set-url origin https://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@github.com/haperezv/miweb.git
+ git push origin master
+ 
